@@ -1,0 +1,30 @@
+.main-head {
+  width: 95%;
+  margin: 0 0 0 auto;
+  // position: sticky;
+}
+
+nav {
+  @include flex(space-between, center, row);
+  min-height: 10vh;
+  width: 60%;
+  flex-wrap: wrap;
+  .logo {
+    @include flex(flex-start, center, row);
+    flex: 1 1 28rem;
+    h3 {
+      margin: 2rem;
+    }
+  }
+  ul {
+    @include flex(space-around, center, row);
+    flex: 1 1 40rem;
+  }
+}
+
+.active {
+  background: $gray-text;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}

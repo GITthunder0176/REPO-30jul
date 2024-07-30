@@ -1,0 +1,48 @@
+.form-section {
+  min-height: 90vh;
+  @include flex(center, center, row);
+  margin-top: 0rem;
+  form {
+    padding: 1rem 10rem;
+    box-shadow: 0px 10px 10px rgba($color: #000000, $alpha: 0.2), 0px 20px 40px rgba($color: #000000, $alpha: 0.2);
+    @include flex(center, center, column);
+    border-radius: 1rem;
+
+    input,
+    textarea {
+      margin: 1.5rem;
+      &:focus {
+        outline: 2px solid black;
+      }
+    }
+
+    textarea {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    button {
+      width: 100%;
+      padding: 1rem;
+      background-color: $background-color;
+      color: white;
+      border: none;
+      border-radius: 1rem;
+
+      &:hover {
+        background: #2fbfae;
+      }
+    }
+  }
+}
+
+.name-area,
+.email-area,
+.message-area {
+  @include flex(center, center, row);
+
+  label {
+    align-self: flex-start;
+    margin-top: 1.5rem;
+  }
+}
